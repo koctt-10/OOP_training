@@ -11,7 +11,7 @@ class Ball():
             self.x = x
             self.y = y
     
-    def __getattribute__(self, item) -> Any:
+    def __getattribute__(self, item):
         if item == "x":
             raise ValueError("Er")
         else:
